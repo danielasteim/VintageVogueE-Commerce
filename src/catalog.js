@@ -236,7 +236,7 @@ export function desenharProdutoSimples(idProduto, idContainerHTML, quantidadePro
   
     const cartaoProdutoCarrinho = `
       <img
-        src=".public/img/assets/${produto.arquivo}"
+        src="./assets/img/${produto.arquivo}"
         alt="Carrinho: ${produto.mes} ${produto.ano} Vogue Issue"
         class="h-24 rounded-lg"
       />

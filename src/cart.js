@@ -87,7 +87,7 @@ function desenharProdutoNoCarrinho(idProduto) {
     </i>
     </button>
     <img
-      src=".public/img/assets/${produto.arquivo}"
+      src="./assets/img/${produto.arquivo}"
       alt="Carrinho: ${produto.mes} ${produto.ano} Vogue Issue"
       class="h-16 rounded-lg"
     />
