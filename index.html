@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>V-V</title>
+
+  <script type="module" src="./main.js"></script>
+  
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+</head>
+
+<body class="bg-orange-500">
+  <section id="cart" class="fixed top-0 right-0 bg-rose-950 h-screen w-[300px] text-white duration-300 shadow-2xl p-5 flex flex-col justify-between">
+    <div id="cart-header" class="flex justify-between m-3 p-2">
+      <button id="close-cart"><i class="fa-solid fa-rectangle-xmark hover:text-red-200"></i></button>
+      <p class="font-serif text-center font-2xl"><i class="fa-solid fa-cart-shopping p-2"></i></p>
+    </div>
+
+    <section id="cart-products" class="p-2 h-3/5 overflow-y-auto flex flex-col gap-1">
+      
+    </section>
+
+    <p id="total-price" class="bg-slate-200 text-slate-800 rounded-lg p-2">Total: $0</p>
+    <button id="buy-cart" class="bg-white text-black p-3 rounded-lg hover:bg-orange-500 hover:text-white">BUY CART</button>
+
+  </section>
+
+  <header id="header" class="h-64 flex bg-rose-950 p-3 justify-between items-center rounded-b-lg border-b-2 border-rose-950">
+    <a href="./"><p class="font-serif font-bold text-orange-500 mx-20 text-4xl">VogueVintage</p></a>
+
+    <div class="text-red-600 gap-10 mr-20 text-2xl">
+      <a href="collection.html"><button><i class="fa-regular fa-star p-2"></i></button></a>
+      <button id="open-cart"><i class="fa-solid fa-cart-shopping p-2"></i></button>
+    </div>
+  </header>
+
+  <main class="bg-red-600 gap-20">
+    <section id="search" class="flex flex-wrap justify-center p-5 items-center bg-orange-500 p-5 indent-3 placeholder:p-2">
+      <input id="mes" list="months" placeholder="Month" class="pl-3 b-2 bg-slate-100 border-solid border-slate-500 shadow-lg rounded-lg m-2">
+      <datalist id="months" class="">
+
+      </datalist>
+      <input id="ano" list="years" placeholder="Year" class="pl-3 b-2 bg-slate-100 border-solid border-slate-500 shadow-lg rounded-lg m-2">
+      <datalist id="years">
+        
+      </datalist>
+      <button id="click-search" class="p-2 b-2 bg-slate-100 border-solid border-slate-500 shadow-lg rounded-lg m-2">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </section>    
+    <section id="container-produto" class="flex border border-rose-950 flex-wrap items-center justify-center p-5"></section>
+
+  </main>
+</body>
+
+</html>
