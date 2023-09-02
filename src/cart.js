@@ -17,7 +17,7 @@ function irParaCheckout() {
     return;
   }
 
-  window.location.href = window.location.origin + './checkout.html';
+  window.location.href = window.location.origin + '/checkout.html';
   checkoutButton = document.getE
 }
 
